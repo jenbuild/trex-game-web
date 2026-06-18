@@ -8,7 +8,8 @@ const APP_STATIC_RESOURCES = [
     "./app.js",
     "./cacti.png",
     "./t-rex-background.png",
-    "./t-rex.png"
+    "./t-rex.png",
+    "./manifest.json"
 ]
 
 
