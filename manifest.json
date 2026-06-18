@@ -1,0 +1,9 @@
+{
+    "name" : "Chrome Dino Run Game",
+    "short_name": "DR",
+    "description": "Offline Dinosaur running game",
+    "start_url": "./",
+    "theme_color": "#eeffee",
+    "background_color": "#eeffee",
+    "display": "standalone"
+}
