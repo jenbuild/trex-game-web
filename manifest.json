@@ -1,0 +1,44 @@
+{
+    "name" : "Chrome Dino Run Game",
+    "short_name": "DR",
+    "description": "Offline Dinosaur running game",
+    "start_url": "./",
+    "theme_color": "#eeffee",
+    "background_color": "#eeffee",
+    "display": "standalone",
+    "icons": [
+    {
+      "src": "./assets/icons/icon-48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/icons/icon-128x128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./assets/icons/icon-512x512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenshots" : [
+    {
+        "src":"./assets/dino-run.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "form_factor": "wide",
+        "label": "Desktop View"
+    },
+    {
+        "src": "./assets/dino-run-mob.png",
+        "sizes": "540x720",
+        "type": "image/png",
+        "form_factor": "narrow",
+        "label": "Mobile View"
+    }
+  ]
+}
