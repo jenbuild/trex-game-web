@@ -5,10 +5,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
     let gravity = 0.9;
     let isJumping = false;
     let isGameOver = false;
-    let randomTime = Math.random() * 4000;
 
     function control(e) {
-        if(e.code === "Space") {
+        if(e.code === "Space" && !isJumping) {
             jump()
         }
     }
@@ -44,6 +43,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     function generateObstacles() {
         if(!isGameOver) {
             let obstaclePosition = 1000;
+            let randomTime = Math.random() * 4000;
             const obstacle = document.createElement('div');
             obstacle.classList.add('obstacle');
             grid.append(obstacle);
@@ -69,4 +69,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     generateObstacles()
 
     document.addEventListener('keydown',control)
+    document.body.addEventListener('touchstart', (e) => {
+        e.preventDefault()
+        if (!isJumping) {
+            jump();
+        }}, 
+        { passive: false }
+    );
 })
